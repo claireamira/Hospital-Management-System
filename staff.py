@@ -26,7 +26,6 @@ def manage_staff():
     staff_window.geometry("400x300")
     staff_window.configure(bg="#e0f7fa")
 
-    # Create staff form
     tk.Label(staff_window, text="Name:", bg="#e0f7fa").grid(row=0, column=0, padx=10, pady=5)
     entry_name = tk.Entry(staff_window)
     entry_name.grid(row=0, column=1, padx=10, pady=5)

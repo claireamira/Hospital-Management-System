@@ -27,7 +27,6 @@ def register_patient():
     register_window.geometry("400x300")
     register_window.configure(bg="#e0f7fa")
 
-    # Create registration form
     tk.Label(register_window, text="Name:", bg="#e0f7fa").grid(row=0, column=0, padx=10, pady=5)
     entry_name = tk.Entry(register_window)
     entry_name.grid(row=0, column=1, padx=10, pady=5)
@@ -45,3 +44,4 @@ def register_patient():
     entry_history.grid(row=3, column=1, padx=10, pady=5)
     
     tk.Button(register_window, text="Submit", command=submit, bg="#007acc", fg="white").grid(row=4, column=1, padx=10, pady=10)
+

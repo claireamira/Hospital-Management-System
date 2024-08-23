@@ -4,7 +4,6 @@ def create_db():
     conn = sqlite3.connect('hospital.db')
     c = conn.cursor()
     
-    # Create tables if they don't exist
     c.execute('''CREATE TABLE IF NOT EXISTS patients (
                    patient_id INTEGER PRIMARY KEY,
                    name TEXT,
@@ -44,3 +43,17 @@ def create_db():
 
     conn.commit()
     conn.close()
+
+def print_patients():
+    conn = sqlite3.connect('hospital.db')
+    c = conn.cursor()
+    
+    c.execute('SELECT * FROM patients')
+    patients = c.fetchall()
+
+    for patient in patients:
+         print(patient)
+
+    conn.close()
+
+print_patients()    

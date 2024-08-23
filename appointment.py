@@ -28,7 +28,6 @@ def schedule_appointment():
     appointment_window.geometry("400x300")
     appointment_window.configure(bg="#e0f7fa")
 
-    # Create appointment form
     tk.Label(appointment_window, text="Patient ID:", bg="#e0f7fa").grid(row=0, column=0, padx=10, pady=5)
     entry_patient_id = tk.Entry(appointment_window)
     entry_patient_id.grid(row=0, column=1, padx=10, pady=5)

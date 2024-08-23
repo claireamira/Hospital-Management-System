@@ -27,7 +27,6 @@ def manage_billing():
     billing_window.geometry("400x300")
     billing_window.configure(bg="#e0f7fa")
 
-    # Create billing form
     tk.Label(billing_window, text="Patient ID:", bg="#e0f7fa").grid(row=0, column=0, padx=10, pady=5)
     entry_patient_id = tk.Entry(billing_window)
     entry_patient_id.grid(row=0, column=1, padx=10, pady=5)
